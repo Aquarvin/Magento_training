@@ -27,6 +27,7 @@ class FrontController extends \Magento\Framework\App\FrontController
         \Magento\Framework\App\Response\Http $response,
         \Psr\Log\LoggerInterface $logger
     ) {
+        parent::__construct($routerList, $response);
         $this->_routerList = $routerList;
         $this->response = $response;
         $this->logger = $logger;
@@ -40,10 +41,10 @@ class FrontController extends \Magento\Framework\App\FrontController
      */
     public function dispatch(\Magento\Framework\App\RequestInterface $request)
     {
-        foreach ($this->_routerList as $router) {
+        /*foreach ($this->_routerList as $router) {
             $this->logger->info(get_class($router));
         }
-        $this->_routerList->rewind();
+        $this->_routerList->rewind();*/
         return parent::dispatch($request);
     }
 }
