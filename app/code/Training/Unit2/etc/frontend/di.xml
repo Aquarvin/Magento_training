@@ -18,16 +18,6 @@
             </argument>
         </arguments>
     </type>
-    <type name="Magento\Framework\App\Router\NoRouteHandlerList">
-        <arguments>
-            <argument name="handlerClassesList" xsi:type="array">
-                <item name="default" xsi:type="array">
-                    <item name="class" xsi:type="string">Training\Unit2\Controller\NoRouteHandler</item>
-                    <item name="sortOrder" xsi:type="string">200</item>
-                </item>
-            </argument>
-        </arguments>
-    </type>
     <type name="Magento\Catalog\Controller\Product\View">
         <plugin name="product-view-controller-plugin"
                 type="Training\Unit2\Plugin\Controller\Product\View" sortOrder="10"/>
