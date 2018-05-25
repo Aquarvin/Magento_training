@@ -6,6 +6,6 @@ class Description
 {
     public function beforeToHtml(\Magento\Catalog\Block\Product\View\Description $originalBlock)
     {
-        $originalBlock->getProduct()->setDescription('Test description');
+        $originalBlock->setTemplate('Training_Unit3::description.phtml');
     }
 }
