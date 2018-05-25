@@ -12,7 +12,7 @@ class Template extends \Magento\Framework\App\Action\Action
     public function execute()
     {
         $block = $this->_view->getLayout()->createBlock('Training\Unit3\Block\Template');
-        $block->setTemplate('template.html');
+        $block->setTemplate('template.phtml');
         $this->getResponse()->appendBody($block->toHtml());
     }
 }
