@@ -27,6 +27,10 @@ class Index extends \Magento\Framework\App\Action\Action
 
         $block = $layout->createBlock('Training\Unit3\Block\Test', 'super_custom_block_name');
         $layout->setChild('content', 'super_custom_block_name', '');
+
+        $textBlock = $layout->createBlock('Magento\Framework\View\Element\Text', 'just_text_block');
+        $textBlock->setText("Hello world from text block !");
+        $layout->setChild('content', 'just_text_block', '');
         return $resultPage;
 
     }
