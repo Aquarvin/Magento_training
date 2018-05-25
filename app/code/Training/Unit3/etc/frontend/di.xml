@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Inchoo d.o.o.
+ * created by Zoran Salamun(zoran.salamun@inchoo.net)
+ * Module is created for Custom Router demonstration
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Block\Product\View\Description">
+        <plugin name="product-view-description-plugin"
+                type="Training\Unit3\Plugin\Block\Product\View\Description" sortOrder="10"/>
+    </type>
+</config>
