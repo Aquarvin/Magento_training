@@ -9,6 +9,9 @@
     <body>
         <referenceContainer name="content.top">
             <block class="Magento\Framework\View\Element\Template" name="content.top.custom" template="Training_Render::top/custom.phtml">
+                <arguments>
+                    <argument name="background_color" xsi:type="string">lightskyblue</argument>
+                </arguments>
             </block>
         </referenceContainer>
     </body>
