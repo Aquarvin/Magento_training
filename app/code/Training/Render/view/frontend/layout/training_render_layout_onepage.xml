@@ -12,5 +12,6 @@
                 <argument translate="true" name="title" xsi:type="string">Ha-ha, my custom page title</argument>
             </action>
         </referenceBlock>
+        <referenceBlock name="content.top.custom" remove="true" />
     </body>
 </page>
