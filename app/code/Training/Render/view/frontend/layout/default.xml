@@ -14,5 +14,8 @@
                 </arguments>
             </block>
         </referenceContainer>
+        <referenceContainer name="header.panel">
+            <block class="Magento\Framework\View\Element\Template" name="top.links.custom" template="Training_Render::top/custom_link.phtml"/>
+        </referenceContainer>
     </body>
 </page>
