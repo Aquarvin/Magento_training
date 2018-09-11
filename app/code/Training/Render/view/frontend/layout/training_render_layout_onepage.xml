@@ -6,12 +6,10 @@
  */
 -->
 <page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Ha-ha, my custom page title</title>
+    </head>
     <body>
-        <referenceBlock name="page.main.title">
-            <action method="setPageTitle">
-                <argument translate="true" name="title" xsi:type="string">Ha-ha, my custom page title</argument>
-            </action>
-        </referenceBlock>
         <referenceBlock name="content.top.custom" remove="true" />
     </body>
 </page>
